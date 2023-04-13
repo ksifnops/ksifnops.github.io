@@ -1,4 +1,3 @@
-# ksifnops.github.io
 
 ## heme: jekyll-theme-minimal
 
