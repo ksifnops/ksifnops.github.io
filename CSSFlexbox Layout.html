@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Template</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        /*设置弹性盒容器 flex 弹性*/
+        section {
+            display: -webkit-flex;
+            display: flex;
+        }
+        nav{
+            -webkit-flex:1;
+            -ms-flex: 1;
+            flex: 1;
+            background-color: #ccc;
+            padding: 20px;
+
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        article{
+            -webkit-flex:3;
+            -ms-flex:3;
+            flex: 3;
+            background-color: #f1f1f1;
+            padding: 10px;
+
+        }
+        footer{
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        /*响应式布局 是菜单和内容（在部分内）放在一起而不是并列排放*/
+        @media (max-width:600px){
+            section {
+                -webkit-flex-direction:colum;
+                flex-direction: column;
+            }
+
+          a:link{
+            color:#686868;
+            background-color:transparent;
+            text-decoration:none;
+        }
+        }
+
+    </style>
+</head>
+<!--css flexbox layout 页面适应不用屏幕尺寸和显示设备是，使用flexbox可以确保
+元素行为可测-->
+<body>
+    <h2>CSS Layout Flexbox</h2>
+    <p>In this example, we have created a header,
+         two columns/boxes and a footer. On smaller screens,
+          the columns will stack
+        on top of each other.</p>
+    <p>Resize the browser window to see the
+        responsive effect.</p>
+    <p><strong>Note:</strong> Flexbox is not
+        supported in Internet Explorer
+         10 and earlier versions.</p>
+
+<p>在本例中，我们创建了一个页眉、
+两个列/框和一个页脚。在较小的屏幕上，
+这些列将叠加在一起。调整浏览器窗口的大小以查看响应效果。</p>
+
+<p><strong>注意:</strong> Flexbox 在 Internet Explorer
+10和早期版本中不受支持。</p>
+
+<header>
+    <h2>城市 Cities</h2>
+</header>
+
+<section>
+    <nav>
+        <ul>
+            <li><a href="#">伦敦 London</a></li>
+            <li><a href="#">巴黎 Paris</a></li>
+            <li><a href="#">东京 Tokyo</a></li>
+        </ul>
+    </nav>
+</section>
+
+<footer>
+    <p>页脚 Footer</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #myHeader {
+                background-color: lightblue;
+                color: black;
+                padding: 40px;
+                text-align: center;
+            }
+            .city{
+                background-color: bisque;
+                color: white;
+                padding: 10px;
+            }
+        </style>
+    </head>
+</html>
+<body>
+    <h1 id="myHeader">Hello World</h1>
+    <h2 class="city">上海</h2>
+    <h2 class="city">北京</h2>
+    <h2 id="c4">第四章</h2>
+    <!--书签-->
+    <a href="#4">跳转第四章</a>
+    <a href="html_demo.html#c4">假装这链接在另一个页面</a>
+
+    <h1 id="JavaScript">Hello World</h1>
+    <button onclick="displayResult()">点我发现新大陆</button>
+
+    <script>
+        function displayResult(){
+            document.getElementById("JavaScript").innerHTML = "在JavaScript中使用id属性"
+        }
+    </script>
+</body>
+</html>
+<!--该id属性指定 HTML 元素的唯一 ID。该id 属性的值在 HTML 文档中必须是唯一的。
+
+该id属性用于指向样式表中的特定样式声明。JavaScript 也使用它来访问和操作具有特定 id 的元素。
+
+id 的语法是：写一个散列字符 (#)，后跟一个 id 名称。然后，在花括号 {} 内定义 CSS 属性。
+
+在下面的示例中，我们有一个<h1>指向 ID 名称“myHeader”的元素。该<h1> 元素将根据#myHeader head 部分中的样式定义设置样式：
+    注意： id名称区分大小写！
+
+    注意： id 名称必须至少包含一个字符，不能以数字开头，并且不能包含空格（空格、制表符等）。
+
+一个类名可以被多个 HTML 元素使用，而一个 id 名只能被页面中的一个 HTML 元素使用-->

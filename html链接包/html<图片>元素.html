@@ -1,0 +1,48 @@
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <h2>The picture Element</h2>
+    <picture>
+        <source media="(min-width:650px)"
+        srcset="IMG_0902.JPG">
+        <source media="(min-width:465px)"
+            srcset="pexels-sevil-yeva-15895540.jpg">
+            <img src="shutterstock_632401514.jpg" style="width:auto;">
+    </picture>
+
+<p>Resize the browser to see different versions of the picture loading at different viewport sizes.
+    The browser looks for the first source element where the media query matches the user's current viewport width,
+    and fetches the image specified in the srcset attribute.</p>
+
+<p>The img element is required as the last child tag of the picture declaration block.
+    The img element is used to provide backward compatibility for browsers that do not support the picture element, or
+    if none of the source tags matched.</p>
+
+<p><strong>Note:</strong> The picture element is not supported in IE12 and earlier or Safari 9.0 and earlier.</p>
+</body>
+</html>
+
+<!--html<picture>元素
+    指定图像资源的灵活性
+<picture>元素包含一个或多个<source>元素，每个元素通过属性引用不同的图像
+srcset 这样浏览器就可以选择最合适当前视图/或设备的图像
+每个<source>元素都有一个media属性，用于定义图像何时最合适 -->
+
+<!--如果是屏幕比较小，则没有必要加载较大的图像文件，浏览器
+将使用<source>具有匹配属性值的第一个元素，并且忽略以下元素
+格式支持：某些浏览器不支持所有图像格式，通过使用<picture>元素，可以添加
+    所有格式图像，浏览器将用它识别第一个格式，并忽略以下任何元素-->
+    <picture>
+        <source srcset="shutterstock_632401514.jpg">
+        <source srcset="shutterstock_632401514.jpg">
+        <img src="IMG_0950.GIF" alt="个人网站" style="width: auto;"
+    </picture>
+
+HTML 图像标签
+Tag Description
+<img> Defines an image
+<map> Defines an image map
+    <area> Defines a clickable area inside an image map
+    <picture> Defines a container for multiple image resources

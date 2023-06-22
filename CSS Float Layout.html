@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>css Temp;ate</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1">
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: #f87d7d;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+
+        }
+        nav {
+            /* float:定义浮动导航位置等 */
+            float:left;
+            width:30%;
+            height: 300px;
+            background-color: #ccc;
+            padding: 20px;
+
+
+        }
+        /* 设置列表样式 */
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+
+        }
+        /* 设置独立的内容 */
+        article{
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+        /* 清除floats浮动列表后面的浮点不需要的内容*/
+        section::after {
+            content:"";
+            display: table;
+            clear: both;
+         /*section:after：部分后面的部分 content：内容里的 display table：显示的网格
+         clear：both 清除格数据 */
+        }
+        footer{
+            background-color: #777;
+            padding: 10px;
+            text-align: center;/*水平对齐-中心*/
+            color: white;
+        }
+        /*定义响应式布局方式：灵活适应不用的屏幕 以下定义：使两个列/框在小屏幕上
+        叠加一起而不是并排*/
+        @media (max-width:600px){
+            nav,article{
+                width: 100%;
+                height: auto;
+            }
+
+                    a:link{
+            color:#686868;
+            background-color:transparent;
+            text-decoration:none;
+        }
+        }
+    </style>
+    </head>
+<!--
+    HTML布局元素和技术
+    网站通常在多个栏中显示内容：杂志和报纸
+    布局元素：
+    header：定义文档或标题、
+    nav定义一组导航链接
+    article：定义独立的自包含内容 嵌入框架
+    aside：定义内容之外的内容 侧边栏
+    footer：定义文档或者部分页脚
+    details：定义可以按需打开或者 关闭的其他信息
+    summary details 定义元素标题
+    ---------------
+    布局技术：css框架、
+    css浮动属性float layout、
+    css弹性框flexbox layout、
+    css网格grid layout
+    ---------------
+-->
+<body>
+    <h1>CSS Layout float </h1>
+    <p>创建了一个页眉、两个列和一个页脚在较小的
+        屏幕上，这些列将叠加在一起。
+        <p>调整浏览器的大小后面还有介绍可以学习（假装是英文）</p>
+        In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on
+        top of each other.</p>
+
+        <p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML
+        Responsive.)
+    </p>
+    <header>
+        <h2>城市 Cities</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul style="list-style-type: disc;"></ul>
+                <li><a href="#">伦敦 London</a></li>
+                <li><a href="#">巴黎 Paris</a></li>
+                <li><a href="#">东京 Tokyo</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>London</h1>
+            <p>London is the capital city of England.
+                It is the most populous city in the United Kingdom,
+                 with a metropolitan area
+                of over 13 million inhabitants.</p>
+
+            <p>Standing on the River Thames,
+                London has been a major settlement
+                for two millennia, its history going back to its
+                founding by the Romans, who named it Londinium.</p>
+        </article>
+
+    </section>
+
+    <footer>
+        <p>页脚 Footer</p>
+    </footer>
+
+
+</body>
+</html>

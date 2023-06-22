@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    </head>
+    <body>
+        <h2>响应式网页设计</h2> <!--设置视口 使用html和css自动调整 隐藏
+        缩小和放大网站，使其适应所有的设备-->
+        <p>------</p>
+        <img src="/ksifnops.github.io/html链接包/IMG_0125.jpg" style="width: 100%;">
+        <!--CSS width属性为100%，图像响应放大或缩小-->
+        <p>--------</p>
+        <img src="/ksifnops.github.io/html链接包/IMG_0902.JPG"
+        style="max-width: 100%;height: auto;">
+        <!--max-width 属性设置为100% 图像必要时缩小，但不会放大其原始尺寸-->
+        <p>--------</p>
+        <picture>
+            <source srcset="IMG_0897.jpg" media="(max-width:600px)">
+            <source  srcset="IMG_0900.jpg" media="(max-width:1500)">
+            <source srcset="IMG_0900.jpg">
+            <img src="img_smallflower.jpg" alt="Flowers"
+            style="width: auto;">
+        </picture>
+        <!--根据浏览器显示不同的图像 <picture>调整浏览器窗口大小以查看下图如何根据宽度变化-->
+        <p>---------</p>
+        <h1 style="font-size: 10vw;">hello world</h1>
+        <p>---------</p>
+        <!--文本根据浏览器窗口大小调整 响应式文字大小-->
+
+
+
+    </body>
+</html>

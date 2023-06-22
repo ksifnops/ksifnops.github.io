@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="demo"></p>
+    <button type="button" onclick="myFunction(demo)">点我有惊喜</button>
+    <!--JavaScript可以改变样式-->
+    <script>
+        function myFunction(){
+            document.getElementById("demo").style.fontSize ="25px";
+            document.getElementById("demo").style.color = "red";
+            document.getElementById("demo").style.backgroundColor="yellow";
+        }
+        document.getElementById("demo").innerHTML = "Hell JavaScript!";
+    </script>
+
+        <p><img id="myImage" src="/ksifnops.github.io/html链接包/IMG_0950.GIF"
+        width="600" height="100"></p>
+        <script>
+            function light(sw) {
+                var pic;
+                if (sw=0){
+                    pic="/ksifnops.github.io/html链接包/IMG_0950.GIF"
+                } else {
+                    pic = "/ksifnops.github.io/html链接包/IMG_0950.GIF"
+                }
+                document.getElementById("myImage").src = pic;
+            }
+        </script>
+        <p>
+            <button type="button" onclick = "light(1)">Light On</button>
+            <button type="button" onclick="light(0)">Light Off</button>
+
+        </p>
+
+        <!--<noscript>标记定义了替代内容，以显示给浏览器禁用的脚本 -->
+        <script>
+            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        </script>
+        <noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+</body>
+</html>
+<!--HTML Java Script <script>用于定义客户端脚本
+    要么包含脚本语句 要么通过属性指向外部脚本文件src
+    JavaScript的常见用途是图像处理、表单验证和内容的动态更改
+    最常用document.getElementById()方法
+-->
