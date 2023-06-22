@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        a:link{
+            color:green;
+            background-color:transparent;
+            text-decoration:none;
+        }
+        a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+
+
+    <title>htm链接</title>
+</head>
+<body>
+<!--链接：可以点击一个页面到另一个页面 HTML链接是超链接 <a>定义超链接 -->
+    <a href="url">link text</a>
+    <a href="https://ksifnops.github.io/">个人网站</a>
+    <!--HTML链接 目标属性：一般情况下页面显示在当前浏览器窗口中
+    _self- 默认。在单击时在同一窗口/选项卡中打开文档
+    _blank- 在新窗口或标签页中打开文档
+    _parent- 在父框架中打开文档
+    _top- 在整个窗口中打开文档-->
+    <p>使用target=“_blank"在新的浏览器窗口或选项卡中打开链接文档 </p>
+    <p><a href="http://www.w3schools.com/" target="_blank">visit w3schools</a></p>
+    <!--已上是绝对URL（完整的网址 href） 以下是相对URL（本地链接 指向同一网站内页面的链接）-->
+    <p>relative URLS 相对URLs</p>
+    <p><a href="html_images.asp">HTML Tmages</a></p>
+    <p><a href="/css/default.sap">css tutorial</a></p>
+    <!--HTML 使用图像作为链接 -->
+    <a href="https://ksifnops.github.io/">
+        <img src="IMG_0125.jpg" alt="图像作为链接 点击试试"
+        style="width: 400px;height: 500px;" >
+    </a>
+        <p><a href="mailto:someone@magail.com">发送邮件</a></p>
+        <!--按钮作为链接：需要学习javaScript代码
+        允许制定特定事件发生的情况-->
+        <button onclick="document.location='default.asp'">HTML Tutorial</button>
+        <a href="https://ksifnops.github.io/">按钮瞅一瞅</a>
+
+        <p><a href="#c7">跳转到第七章</a></p>
+            <p><h2 id="c7">夜的第七章 7</h2></p>
+             <!--使id属性（id="value") 定义页面的书签
+            href属性（href="#value)"链接到书签-->
+            <!--html图像 图像可以改善网页的设计和外观-->
+            <img src="IMG_0902.JPG" alt="摩托小子"
+            style="width: 400px;height: 500px;">
+            <img src="/ksifnops.github.io/html链接包/动图/IMG_0950.GIF"alt="动画"
+            style="width:400px;height: 80px;">
+            <!--<img src="url" alt="alternatetext"-->
+            <!--<img>:在网页中嵌入图像，标签仅包含属性：src:指定图像路径
+            alt：指定图像的替代文本，用style属性指定图像的宽度和高度
+        ： style="width:500px;height:600px;>"
+            链接另一个文件夹中的图像：需要完整的文件夹src
+            另一个服务器/网站上的图像：必须包含绝对的（完整的）URL src
+            图像作为链接，需要将<img>标签放在<a>标签中
+            图像浮动在文本左侧或右侧：使用css float-->
+            <p><img src="/ksifnops.github.io/html链接包/shutterstock_632401514.jpg";
+                alt="戳破" style="float: right; width: 200px; height: 200px;">这图像
+            出现在了我的右侧.</p>
+
+            <!--HTML图像映射：可以在图像上创建可点击区域
+            <map>:标记定义图像映射 <area>:定义一个或者多个-->
+            </P><img src="shutterstock_255665983.jpg" alt="机器人手" style="width: 400px;height: 400px;"
+             usemap="#练习映射">
+            <map name="练习映射">
+                <area shape="rec" coords="34,44,270,350" href="https://ksifnops.github.io/"
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
